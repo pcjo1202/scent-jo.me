@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Sans_KR } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const notoSansKr = Noto_Sans_KR({
@@ -7,9 +8,57 @@ const notoSansKr = Noto_Sans_KR({
   subsets: ["latin"],
 });
 
+const Pretendard = localFont({
+  src: "../../public/fonts/PretendardVariable.woff2",
+  variable: "--font-pretendard",
+});
+
 export const metadata: Metadata = {
-  title: "냄새나는 개발자 박창조",
-  description: "안녕하세요. 프론트엔드 개발자 박창조입니다.",
+  title: "향기나는 개발자 박창조",
+  description:
+    "안녕하세요. 동료와 사용자에게 탁월한 경험을 전달하는 프론트엔드 개발자 박창조입니다.",
+  icons: {
+    icon: "/favicon.png",
+  },
+  openGraph: {
+    images: ["/favicon.png"],
+  },
+  metadataBase: new URL("https://scent-jo.me"),
+  alternates: {
+    canonical: "https://scent-jo.me",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  manifest: "/manifest.json",
+  themeColor: "#000000",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  appleWebApp: {
+    title: "향기나는 개발자 박창조",
+    statusBarStyle: "black-translucent",
+  },
+  authors: [{ name: "박창조", url: "https://scent-jo.me" }],
+  creator: "박창조",
+  publisher: "박창조",
+  category: "technology",
+  keywords: [
+    "프론트엔드",
+    "개발자",
+    "박창조",
+    "향기나는 개발자",
+    "포트폴리오",
+    "신입",
+    "프론트엔드 개발자",
+  ],
+  applicationName: "향기나는 개발자 박창조",
 };
 
 export default function RootLayout({
@@ -19,7 +68,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className={`${notoSansKr.variable} antialiased`}>{children}</body>
+      <body
+        className={` ${Pretendard.variable} ${notoSansKr.variable} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
