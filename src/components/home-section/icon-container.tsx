@@ -13,15 +13,14 @@ export default function IconContainer({ isLoading }: { isLoading: boolean }) {
   return (
     <div
       className={cn(
-        "absolute md:top-1/2 top-1/2 left-1/2 -translate-x-1/2 md:-translate-y-1/2 -translate-y-1/3 z-100",
         "transition-all duration-500 ease-out delay-1000",
-        isLoading ? "opacity-0" : "opacity-100"
+        isLoading ? "opacity-0 scale-95" : "opacity-100 scale-100"
       )}
     >
       <ul className="">
         <GlassIcons
           items={items}
-          className="flex flex-wrap gap-20 justify-center"
+          className="flex flex-wrap gap-8 md:gap-16 justify-center"
         />
       </ul>
     </div>
