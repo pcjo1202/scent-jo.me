@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 interface ContactInfoProps {
-  isLoading: boolean;
+  isLoading?: boolean;
 }
 
 export default function ContactInfo({ isLoading }: ContactInfoProps) {

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Noto_Sans_KR } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -12,6 +12,12 @@ const Pretendard = localFont({
   src: "../../public/fonts/PretendardVariable.woff2",
   variable: "--font-pretendard",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
 
 export const metadata: Metadata = {
   title: "향기나는 개발자 박창조",
@@ -36,11 +42,6 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   themeColor: "#000000",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
   appleWebApp: {
     title: "향기나는 개발자 박창조",
     statusBarStyle: "black-translucent",

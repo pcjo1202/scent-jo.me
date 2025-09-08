@@ -1,0 +1,21 @@
+{
+  "name": "향기나는 개발자 박창조",
+  "short_name": "박창조",
+  "description": "안녕하세요. 동료와 사용자에게 탁월한 경험을 전달하는 프론트엔드 개발자 박창조입니다.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "utilities"],
+  "lang": "ko",
+  "dir": "ltr"
+}

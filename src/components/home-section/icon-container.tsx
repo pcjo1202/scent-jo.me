@@ -4,7 +4,7 @@ import BlogIcon from "../icons/blog-icon";
 import GithubIcon from "../icons/github-icon";
 import PortfolioIcon from "../icons/portfolio-icon";
 
-export default function IconContainer({ isLoading }: { isLoading: boolean }) {
+export default function IconContainer({ isLoading }: { isLoading?: boolean }) {
   const items = [
     {
       icon: <GithubIcon />,
@@ -28,7 +28,7 @@ export default function IconContainer({ isLoading }: { isLoading: boolean }) {
   return (
     <div
       className={cn(
-        "transition-all duration-500 ease-out delay-1000",
+        "transition-all duration-500 ease-out delay-1500",
         isLoading ? "opacity-0 scale-95" : "opacity-100 scale-100"
       )}
     >
