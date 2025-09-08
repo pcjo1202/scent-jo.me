@@ -132,5 +132,11 @@ html {
   }
   body {
     @apply bg-background text-foreground;
+    font-family:
+      var(--font-pretendard),
+      var(--font-noto-sans-kr),
+      system-ui,
+      -apple-system,
+      sans-serif;
   }
 }
