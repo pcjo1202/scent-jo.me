@@ -5,6 +5,7 @@ export interface GlassIconsItem {
   color: string;
   label: string;
   customClass?: string;
+  href?: string;
 }
 
 export interface GlassIconsProps {
@@ -37,6 +38,11 @@ const GlassIcons: React.FC<GlassIconsProps> = ({ items, className }) => {
       {items.map((item, index) => (
         <button
           key={index}
+          onClick={() => {
+            if (item.href) {
+              window.open(item.href, "_blank");
+            }
+          }}
           type="button"
           aria-label={item.label}
           className={`cursor-pointer relative bg-transparent outline-none md:size-[10em] size-[6em] [perspective:24em] [transform-style:preserve-3d] [-webkit-tap-highlight-color:transparent] group ${

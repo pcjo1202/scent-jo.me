@@ -6,9 +6,24 @@ import PortfolioIcon from "../icons/portfolio-icon";
 
 export default function IconContainer({ isLoading }: { isLoading: boolean }) {
   const items = [
-    { icon: <GithubIcon />, color: "white", label: "Github" },
-    { icon: <BlogIcon />, color: "white", label: "Tech Blog" },
-    { icon: <PortfolioIcon />, color: "white", label: "Portfolio" },
+    {
+      icon: <GithubIcon />,
+      color: "white",
+      label: "Github",
+      href: "https://github.com/pcjo1202",
+    },
+    {
+      icon: <BlogIcon />,
+      color: "white",
+      label: "Tech Blog",
+      href: "https://velog.io/@pcjo1202",
+    },
+    {
+      icon: <PortfolioIcon />,
+      color: "white",
+      label: "Portfolio",
+      href: "https://link.scent-jo.me/portfolio/pdf",
+    },
   ];
   return (
     <div
