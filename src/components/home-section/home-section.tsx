@@ -2,6 +2,7 @@
 
 import LightRays from "@/components/LightRays";
 import { useEffect, useState } from "react";
+import ContactInfo from "./contact-info";
 import FirstLoading from "./first-loading";
 import IconContainer from "./icon-container";
 
@@ -18,6 +19,7 @@ export default function HomeSection() {
     <div className="h-dvh w-full relative z-0">
       <FirstLoading isLoading={isLoading} />
       <IconContainer isLoading={isLoading} />
+      <ContactInfo isLoading={isLoading} />
       <LightRays
         raysOrigin="top-center"
         raysColor="#ffffff"
@@ -31,8 +33,5 @@ export default function HomeSection() {
         className="bg-background"
       />
     </div>
-    // <section id="home" className="h-dvh bg-neutral-500">
-    //   <h1>Home</h1>
-    // </section>
   );
 }
