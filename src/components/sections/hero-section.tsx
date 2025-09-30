@@ -1,3 +1,4 @@
+import IconContainer from "@/components/home-section/icon-container";
 import Image from "next/image";
 
 export default function HeroSection() {
@@ -22,6 +23,8 @@ export default function HeroSection() {
             </p>
           </div>
         </div>
+        {/* link */}
+        <IconContainer />
         {/* 사진? */}
         <div className="flex flex-col items-center justify-center gap-6">
           <Image
