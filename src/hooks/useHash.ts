@@ -1,0 +1,21 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+export function useHash() {
+  const [hash, setHash] = useState<string | null>(null);
+
+  useEffect(() => {
+    const handler = () => {
+      setHash(window.location.hash);
+    };
+
+    window.addEventListener("hashchange", handler);
+
+    return () => {
+      window.removeEventListener("hashchange", handler);
+    };
+  }, []);
+
+  return hash;
+}
