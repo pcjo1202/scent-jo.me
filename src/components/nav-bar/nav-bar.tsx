@@ -12,22 +12,22 @@ const navigation = [
   { label: "프로젝트", href: "#projects" },
   { label: "경험", href: "#experience" },
   { label: "블로그", href: "#blog" },
+  { label: "연락하기", href: "#contact" },
 ];
 
-export default function Header() {
+export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const hash = useHash();
-
   return (
-    <header className="fixed md:bottom-6 bottom-0 z-50 w-full md:w-auto">
+    <nav className="flex justify-center w-full">
       {/* desktop */}
-      <nav className="hidden md:block rounded-full px-4 py-2 backdrop-blur-xs bg-gray-200/70">
-        <ul className="grid grid-cols-6 items-center justify-center gap-5">
+      <div className="hidden md:block px-4 py-2 backdrop-blur-xs ">
+        <ul className="flex flex-col gap-5">
           {navigation.map(({ label, href }) => (
             <li
               className={cn(
-                "cursor-pointer text-center hover:bg-white h-full rounded-full px-4 py-1 transition",
-                hash === href && "bg-white ring-1 ring-blue-200"
+                "cursor-pointer text-center hover:text-blue-500 hover:-translate-y-1 h-full rounded-full px-4 py-1 transition",
+                hash === href && "text-blue-500"
               )}
               key={href}
               onClick={() => {
@@ -38,7 +38,7 @@ export default function Header() {
             </li>
           ))}
         </ul>
-      </nav>
+      </div>
       {/* mobile */}
       <div className="md:hidden backdrop-blur-sm ">
         <div className="flex w-full justify-end">
@@ -61,6 +61,6 @@ export default function Header() {
           </nav>
         )}
       </div>
-    </header>
+    </nav>
   );
 }
