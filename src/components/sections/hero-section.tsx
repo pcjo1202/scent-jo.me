@@ -5,7 +5,7 @@ import ResumeButton from "./hero/resume-button";
 
 export default function HeroSection() {
   return (
-    <div id="home" className="h-dvh w-full snap-start lg:px-32 px-18">
+    <div id="home" className="h-dvh w-full snap-start lg:px-32 px-8">
       <div className="flex flex-col items-start justify-center h-full pb-40 gap-6">
         {/* title */}
         <div className="w-full flex flex-col justify-center gap-6">
@@ -15,7 +15,7 @@ export default function HeroSection() {
               <span className="">Frontend Developer</span>
             </h2>
           </FadeIn>
-          <h1 className="text-5xl md:text-7xl font-bold flex flex-col justify-center  gap-2">
+          <h1 className="text-3xl md:text-7xl font-bold flex flex-col justify-center  gap-2">
             <FadeIn delay={0.5}>
               <span className="text-black">Park Chang Jo</span>
             </FadeIn>

@@ -5,7 +5,7 @@ export default function Description({
 }) {
   return (
     <div className="w-full flex flex-col justify-center gap-6">
-      <div className="text-base md:text-lg text-gray-500 font-semibold">
+      <div className="text-xs md:text-lg text-gray-500 font-semibold">
         {children}
       </div>
     </div>
