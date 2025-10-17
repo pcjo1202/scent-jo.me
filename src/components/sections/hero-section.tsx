@@ -1,10 +1,11 @@
-import { ChevronsDownIcon, DownloadIcon } from "lucide-react";
+import { ChevronsDownIcon } from "lucide-react";
 import FadeIn from "../animated/fade-in";
 import Description from "../ui/description";
+import ResumeButton from "./hero/resume-button";
 
 export default function HeroSection() {
   return (
-    <div id="home" className="h-dvh w-full snap-start">
+    <div id="home" className="h-dvh w-full snap-start lg:px-32 px-18">
       <div className="flex flex-col items-start justify-center h-full pb-40 gap-6">
         {/* title */}
         <div className="w-full flex flex-col justify-center gap-6">
@@ -39,10 +40,7 @@ export default function HeroSection() {
             있습니다.
           </p>
         </Description>
-        <button className="border border-gray-400 hover:bg-gray-500 hover:text-white cursor-pointer transition-all duration-300 flex items-center gap-2 rounded-xl px-4 py-2">
-          <span>이력서 다운로드</span>
-          <DownloadIcon className="w-4 h-4" />
-        </button>
+        <ResumeButton />
       </div>
       {/* scroll down */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
