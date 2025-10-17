@@ -1,8 +1,8 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import FadeIn from "../animated/fade-in";
 import { useRef } from "react";
+import FadeIn from "../animated/fade-in";
 
 interface SectionLayoutProps {
   id: string;
@@ -43,7 +43,7 @@ export default function SectionLayout({
     <section
       ref={ref}
       id={id}
-      className={cn("min-h-dvh w-full py-16", className)}
+      className={cn("min-h-dvh w-full py-16 lg:px-32 px-18", className)}
     >
       <div className="flex w-full flex-col gap-8">
         <div

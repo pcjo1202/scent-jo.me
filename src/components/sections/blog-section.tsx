@@ -1,10 +1,11 @@
-import { getBlogs } from "@/api/get-blog";
+import { ResponseData } from "@/types/blog.type";
 import Image from "next/image";
-import { use } from "react";
 import SectionLayout from "../layouts/section-layout";
 
 export default function BlogSection() {
-  const data = use(getBlogs());
+  // const data = use(getBlogs());
+
+  const data = [] as ResponseData;
 
   console.log(data);
 
