@@ -6,7 +6,7 @@ interface PageLayoutProps {
 
 export default function PageLayout({ children }: PageLayoutProps) {
   return (
-    <div className="flex bg-gray-50 flex-col items-center justify-center min-h-screen min-w-md">
+    <div className="flex bg-gray-50 flex-col items-center justify-center w-dvw min-h-screen">
       {/* <Header /> */}
       <main className="flex-1 w-full">{children}</main>
       <Footer />

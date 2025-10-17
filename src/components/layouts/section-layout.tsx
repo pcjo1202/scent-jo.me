@@ -43,7 +43,7 @@ export default function SectionLayout({
     <section
       ref={ref}
       id={id}
-      className={cn("min-h-dvh w-full py-16 lg:px-32 px-18", className)}
+      className={cn("min-h-dvh w-full py-16 lg:px-32 px-8", className)}
     >
       <div className="flex w-full flex-col gap-8">
         <div
@@ -56,7 +56,7 @@ export default function SectionLayout({
             <div className="h-px basis-1/3 bg-gray-200"></div>
           )}
           <FadeIn direction="right">
-            <h2 className="text-2xl md:text-3xl font-bold"># {title}</h2>
+            <h2 className="text-3xl md:text-3xl font-bold"># {title}</h2>
           </FadeIn>
           {direction === "left" && (
             <div className="h-px basis-1/3 bg-gray-200"></div>

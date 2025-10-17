@@ -7,7 +7,7 @@ export default function AboutSection() {
   return (
     <SectionLayout id="about" title="About Me">
       <div className="flex flex-col gap-30">
-        <div className="flex flex-col lg:flex-row items-start justify-center">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
           <AboutContent />
           <AboutProfileImage />
         </div>
