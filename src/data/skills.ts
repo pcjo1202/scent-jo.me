@@ -1,11 +1,12 @@
-export type Job = "Frontend" | "Backend" | "DevOps";
-export type Topic =
-  | "Language"
-  | "Framework"
-  | "Library"
-  | "Tool"
+export type Job =
+  | "All"
+  | "Frontend"
   | "AI"
+  | "Backend"
+  | "DevOps"
+  | "Mobile"
   | "etc";
+export type Topic = "Language" | "Framework" | "Library" | "Tool" | "etc";
 
 export type skill_name =
   | "HTML"
@@ -319,26 +320,26 @@ const Skills: Skill[] = [
 
   // AI
   {
-    job: "Frontend",
-    topic: "AI",
+    job: "AI",
+    topic: "Tool",
     name: "Claude",
     icon: "https://cdn.simpleicons.org/anthropic/000000",
   },
   {
-    job: "Frontend",
-    topic: "AI",
+    job: "AI",
+    topic: "Tool",
     name: "ChatGPT",
     icon: "https://cdn.simpleicons.org/openai/412991",
   },
   {
-    job: "Frontend",
-    topic: "AI",
+    job: "AI",
+    topic: "Tool",
     name: "Perplexity",
     icon: "https://cdn.simpleicons.org/perplexity/1E88E5",
   },
   {
-    job: "Frontend",
-    topic: "AI",
+    job: "AI",
+    topic: "Tool",
     name: "Google Gemini",
     icon: "https://cdn.simpleicons.org/googlegemini/8E75FF",
   },

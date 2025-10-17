@@ -1,5 +1,6 @@
-import LinksContainer from "@/components/home-section/link-container";
 import PageLayout from "@/components/layouts/page-layout";
+import LinksContainer from "@/components/nav-bar/link-container";
+import NavBar from "@/components/nav-bar/nav-bar";
 import AboutSection from "@/components/sections/about-section";
 import BlogSection from "@/components/sections/blog-section";
 import ContactSection from "@/components/sections/contact-section";
@@ -23,15 +24,22 @@ export default function Home() {
       <BlogSection />
       <ContactSection />
       {/* link */}
-      <div className="fixed bottom-0 left-10 lg:translate-x-4 transition ">
+      <div className="fixed bottom-0 left-6 md:translate-x-4 transition ">
         <div className="flex flex-col items-center justify-center gap-6">
           <LinksContainer />
           <div className="w-px h-30 bg-gray-400"></div>
         </div>
       </div>
       {/* up */}
-      <div className="fixed bottom-10 right-10 lg:-translate-x-4 transition ">
+      <div className="fixed bottom-10 z-50 right-10 lg:-translate-x-4 transition ">
         <ScrollUpButton />
+      </div>
+      {/* nav */}
+      <div className="fixed top-0 right-3 md:-translate-x-4 transition ">
+        <div className="flex flex-col items-center justify-center gap-6">
+          <div className="w-px h-20 bg-gray-400"></div>
+          <NavBar />
+        </div>
       </div>
     </PageLayout>
   );
