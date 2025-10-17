@@ -13,13 +13,17 @@ export default function ExperienceSection() {
   const etc = ExperienceData.filter((experience) => experience.type === "etc");
 
   return (
-    <SectionLayout id="experience" title="Experience">
-      <div className="flex flex-col gap-30 w-full">
+    <SectionLayout //
+      id="experience"
+      title="Experience"
+      className="bg-gray-100"
+    >
+      <div className="flex flex-col gap-16 w-full ">
         <ExperienceContainer title="Education" experiences={education} />
-        <ExperienceContainer
+        {/* <ExperienceContainer
           title="Awards & Certificates"
           experiences={awardsCertificates}
-        />
+        /> */}
         <ExperienceContainer title="Etc" experiences={etc} />
       </div>
     </SectionLayout>

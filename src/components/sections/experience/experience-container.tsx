@@ -12,10 +12,10 @@ export default function ExperienceContainer({
 }: ExperienceContainerProps) {
   return (
     <div className="flex flex-col gap-8 w-full items-center justify-center">
-      <h3 className="text-xl text-blue-400 font-bold">{title}</h3>
-      <ul className="flex flex-col gap-8 lg:w-3/4 w-full">
+      <h3 className="text-2xl text-blue-400 font-bold">{title}</h3>
+      <ul className="flex flex-col gap-6 w-full max-w-5xl">
         {experiences.map((experience) => (
-          <li key={experience.id}>
+          <li key={experience.id} className="w-full">
             <ExperienceItem experience={experience} />
           </li>
         ))}
