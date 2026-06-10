@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   openGraph: {
     images: ["/favicon.png"],
   },
-  metadataBase: new URL("https://scent-jo.me"),
+  metadataBase: new URL("https://scent-jo.dev"),
   alternates: {
-    canonical: "https://scent-jo.me",
+    canonical: "https://scent-jo.dev",
   },
   twitter: {
     card: "summary_large_image",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "향기나는 개발자 박창조",
     statusBarStyle: "black-translucent",
   },
-  authors: [{ name: "박창조", url: "https://scent-jo.me" }],
+  authors: [{ name: "박창조", url: "https://scent-jo.dev" }],
   creator: "박창조",
   publisher: "박창조",
   category: "technology",

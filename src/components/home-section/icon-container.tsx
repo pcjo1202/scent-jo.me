@@ -29,7 +29,7 @@ export default function IconContainer({ isLoading }: { isLoading?: boolean }) {
     <div
       className={cn(
         "transition-all duration-500 ease-out delay-1500",
-        isLoading ? "opacity-0 scale-95" : "opacity-100 scale-100"
+        isLoading ? "opacity-0 scale-95" : "opacity-100 scale-100",
       )}
     >
       <ul className="">
